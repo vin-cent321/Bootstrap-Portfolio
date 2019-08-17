@@ -10,6 +10,32 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #f2f2f2;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+
+        input[type=submit] {
+            background-color: #f2f2f2;
+            color: black;
+            font-family: 'Playfair Display', serif;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(207, 206, 206);
+        }
+    </style>
 </head>
 
 <body>
@@ -23,54 +49,42 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Profile<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Profile<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-            </ul> 
+            </ul>
         </div>
-        
+
     </nav>
 
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="jumbotron">
-                    <h1 class="display-4">Profile</h1>
+                    <h1 class="display-4">Contact</h1>
                     <hr>
-                    <img id="me" src="images/me.JPG" class="img-fluid" alt="Responsive image">
-                    <p class="lead">
-                        <p>My name is Vincent Caracciolo. I was born and raised in NY but moved to Richmond,
-                            Virginia in
-                            January to
-                            live a more
-                            affordable lifestyle with my partner. New York City is the greatest city in the
-                            world
-                            however, it's very
-                            expensive. Virginia's cost of living has allowed us to rent our own apartment and
-                            even
-                            adopt
-                            our own dog
-                            Nacho! Nacho is a Golden Retriever/Shepherd mix and is very cute and friendly. He's
-                            a
-                            good
-                            dogo but has
-                            noise anxiety and doesn't sit well during storms or fireworks.</p>
-                        <p>I graduated with a Bachelors Degree in Fine Arts at Hunter College
-                            in NYC but would like to branch my creativity into the tech industry. Coding is an
-                            exciting
-                            oppurtunity
-                            for me to push the limits of my creativity and expand my art background to
-                            digital layouts and designs. I’m currently a server but will be undergoing bar
-                            training
-                            soon. It will be
-                            fun to make drinks behind
-                            the bar and not have to deal with guests at tables.</p>
-                    </p>
+                    <div class="container">
+                        <form action="action_page.php">
+
+                            <label for="fname">Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Email</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your email..">
+
+                            <label for="subject">Message</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+
+                        </form>
+                    </div>
                     <hr>
                 </div>
             </div>
