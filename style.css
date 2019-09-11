@@ -20,6 +20,11 @@ a, h1 {
     color: white;
 }
 
+#trivialink {
+    font-family: 'Anton', sans-serif;;
+    color: white;
+}
+
 .jumbotron {
     text-align: left;
     background: white;
